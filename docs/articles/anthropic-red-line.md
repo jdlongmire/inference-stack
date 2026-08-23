@@ -4,6 +4,8 @@ title: "The Anthropic Red Line: A Stress Test for AI Ethics and Power"
 permalink: /articles/anthropic-red-line/
 date: 2026-03-06
 description: "Anthropic refused Pentagon terms on lethal autonomous weapons and mass surveillance. The government punished them for it. This article examines what the standoff reveals through the origination-derivation distinction and the AIDK framework."
+image: /assets/brand/banners/commentary-opinion.png
+featured_image: /assets/brand/banners/commentary-opinion.png
 ---
 
 # The Anthropic Red Line: A Stress Test for AI Ethics and Power

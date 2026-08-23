@@ -51,6 +51,10 @@ Canonical treatment: [docs/stack/index.md](docs/stack/index.md). The layer colou
 defined once, in `docs/assets/css/style.css` as `--layer-*`; anything rendering the stack
 reads them from there.
 
+Category banners in `docs/assets/brand/banners/` are **fallbacks for posts with no
+graphic of their own**. A post that already has art keeps it; never overwrite existing
+article art with a banner.
+
 **Anything that names or depicts the layers must agree with `/stack/`.** Two earlier post
 banners did not and were held back until regenerated. The checklist that catches this is
 in [docs/assets/brand/banners/README.md](docs/assets/brand/banners/README.md); run it

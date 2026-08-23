@@ -11,6 +11,7 @@ keywords:
   - LLM
   - Philosophy of AI
 abstract: "The conversation about artificial intelligence has become strangely polarized. This article introduces the origination-derivation framework for understanding AI's genuine capabilities and structural limitations, examining six phenomena the framework helps explain."
+image: /assets/brand/banners/concept-explainer.png
 ---
 
 The conversation about artificial intelligence has become strangely polarized. On one side, breathless predictions of artificial general intelligence arriving any moment. On the other, dismissals of AI as mere hype, destined to collapse under its own weight. Both camps are missing something fundamental.

@@ -14,6 +14,16 @@ render as a stray light line along the banner.
 **All four are cleared for use** as of the 2026-08-23 revision. Every one passed the
 checklist at the bottom of this file.
 
+## What these are for
+
+**Fallbacks, not a house style.** A post that already has its own graphic keeps it. These
+exist so a post *without* one still has a proper header instead of nothing, and so the
+category is legible at a glance.
+
+Never replace existing article art with a banner. As of 2026-08-23, 30 of 36 articles
+carry their own image and were left untouched; the 5 that had none were assigned a banner
+by category, and `articles/index.md` is a listing page and does not need one.
+
 ## Usage
 
 In an article's front matter:

@@ -11,6 +11,7 @@ keywords:
   - Deepfake
   - Prompt Injection
 abstract: "AI has opened a two-front war: simultaneously weapons in attackers' hands and vulnerable targets themselves. Analysis of offensive AI capabilities and defensive vulnerabilities, including the GTG-1002 autonomous attack operation."
+image: /assets/brand/banners/research-technical.png
 ---
 
 In mid-September 2025, Anthropic's security team detected unusual activity on their platform. What they uncovered would become the first documented case of a large-scale cyberattack executed primarily by artificial intelligence. A Chinese state-sponsored group had manipulated Claude Code into conducting autonomous espionage operations against approximately thirty global targets.

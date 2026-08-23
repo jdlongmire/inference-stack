@@ -7,6 +7,8 @@ description: "The future of knowledge work belongs to people who integrate AI in
 categories: [AI Governance]
 tags: [knowledge-work, ai-adoption, domain-expertise, workforce]
 permalink: /articles/overtake-ai/
+image: /assets/brand/banners/commentary-opinion.png
+featured_image: /assets/brand/banners/commentary-opinion.png
 ---
 
 I watched a senior analyst spend three days last week doing something I did in forty minutes.

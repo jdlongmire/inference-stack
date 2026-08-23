@@ -10,6 +10,7 @@ keywords:
   - Benchmark
   - Real-World Performance
 abstract: "A new study puts numbers to something many suspected: the gap between AI benchmark performance and real-world competence isn't a gap. It's a canyon. The best agent failed 97.5% of the time on real freelance work."
+image: /assets/brand/banners/research-technical.png
 ---
 
 A new study puts numbers to something many suspected: the gap between AI benchmark performance and real-world competence isn't a gap. It's a canyon.
