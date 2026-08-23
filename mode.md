@@ -45,7 +45,7 @@ VWMM convention, see [README.md](README.md). The published site lives in `docs/`
 
 ## The seven layers
 
-L1 Model · L2 Context · L3 Memory · L4 Retrieval · L5 Tools · L6 Orchestration · L7 Governance
+L1 Model · L2 Harness · L3 Agent · L4 Context · L5 Governance · L6 Orchestration · L7 Product
 
 Canonical treatment: [docs/stack/index.md](docs/stack/index.md). The layer colours are
 defined once, in `docs/assets/css/style.css` as `--layer-*`; anything rendering the stack

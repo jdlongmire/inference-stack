@@ -16,12 +16,12 @@ Site: **https://inference.thinxai.net**
 | | Layer | What it answers |
 |---|---|---|
 | L1 | Model | What the weights encode |
-| L2 | Context | What the model is given |
-| L3 | Memory | What persists across sessions |
-| L4 | Retrieval | What grounds a claim in evidence |
-| L5 | Tools | What the system can actually do |
-| L6 | Orchestration | How calls compose into a system |
-| L7 | Governance | Who curates and answers for the result |
+| L2 | Harness | What the model runs inside |
+| L3 | Agent | Who is acting, and under what authority |
+| L4 | Context | What it is given to reason over |
+| L5 | Governance | What it may not do, enforced structurally |
+| L6 | Orchestration | How capable parts compose into a system |
+| L7 | Product | What is actually delivered |
 
 Full treatment: [`docs/stack/`](docs/stack/index.md) → https://inference.thinxai.net/stack/
 

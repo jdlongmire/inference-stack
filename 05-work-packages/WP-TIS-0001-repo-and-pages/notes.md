@@ -2,17 +2,22 @@
 
 ## Open decisions for JD
 
-1. **The seven layer names are a draft.** L1 Model, L2 Context, L3 Memory, L4 Retrieval,
-   L5 Tools, L6 Orchestration, L7 Governance — derived from the seven icons in the logo
-   (brain, document, database, search, wrench, node-tree, person). The logo commits to
-   seven distinct layers; it does not name them. These names are thinx-Claude's reading
-   and need JD's sign-off before they are treated as settled, because everything
-   downstream (articles, shorts, the framework page) will reference them.
+1. **The seven layer names are settled.** JD supplied them 2026-08-23: L1 Model,
+   L2 Harness, L3 Agent, L4 Context, L5 Governance, L6 Orchestration, L7 Product.
+   These replaced thinx-Claude's draft (Model / Context / Memory / Retrieval / Tools /
+   Orchestration / Governance), which was a reading of the logo's icons and was wrong in
+   substance: the real taxonomy is architectural (harness, agent, product) rather than
+   infrastructural (memory, retrieval, tools). Prose on `/stack/` was rewritten, not
+   renamed, because the concepts changed.
 
-2. **Layer order.** The logo draws the model on top and the person at the bottom. The
-   site reads that as deliberate: the model is where attention goes, the human is what
-   the stack rests on. If the intent was the reverse, the diagram and the prose both
-   invert.
+2. **Logo icons no longer map to the layer names.** The artwork carries seven icons
+   (brain, document, database, search, wrench, node-tree, person). Against the real names
+   only two land cleanly: brain to Model at position 1 and node-tree to Orchestration at
+   position 6. Document/database/search/wrench were drawn for a memory-and-retrieval
+   reading that is not the framework. The site does not currently render the icons in the
+   layer list, so nothing is visibly wrong today, but the lockup and any future diagram
+   will disagree with the names. Open for JD: re-cut the icon set, or accept the artwork
+   as illustrative rather than a legend.
 
 3. **aithinkr.net disposition.** Left live and untouched. It now duplicates every article
    this site carries. Options when JD wants to close that: 301 the whole domain here,

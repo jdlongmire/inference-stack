@@ -18,7 +18,7 @@ version always lives here.
 
   <div class="short-card">
     <h3>The Token Cliff</h3>
-    <div class="meta">2:18 &middot; L2 Context</div>
+    <div class="meta">2:18 &middot; L1 Model</div>
     <p>Model capability commoditises on a two-year clock. The differentiator is the layer above the model, and context is where that layer fails first.</p>
   </div>
 

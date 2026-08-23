@@ -17,13 +17,14 @@ authority_boundary: >
   NOT authorized without a fresh explicit go: the inference.thinxai.net DNS record
   (JD's live domain); the CI workflow under .github/ (harness hard-stop, needs a
   Chief-Architect override); any external post announcing the site; any change to
-  AI-Research or aithinkr.net; publishing the seven layer NAMES as settled - they
-  are thinx-Claude's draft pending JD's sign-off.
+  AI-Research or aithinkr.net; restating the seven layer names, which
+  were supplied by JD 2026-08-23 and are settled.
 actions:
   - Create repo from longmire-repo-template (done)
   - Migrate AI-Research docs/ wholesale, rebrand config, includes, palette (done)
   - Install brand assets; derive marks, favicons, OG banner (done)
-  - Draft the seven layers and publish /stack/ (done, names pending JD sign-off)
+  - Publish /stack/ with JD's seven layers: Model, Harness, Agent, Context,
+    Governance, Orchestration, Product (done)
   - Add /shorts/ index for the video line (done)
   - Rewrite cross-links to the new domain and repo; repoint Giscus (done)
   - Enable GitHub Pages on main /docs with CNAME inference.thinxai.net

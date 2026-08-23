@@ -13,12 +13,12 @@
   --brand-blue:   #395977;
 
   --layer-1-model:         #1c2b3a;
-  --layer-2-context:       #2f5f9c;
-  --layer-3-memory:        #5b9bc4;
-  --layer-4-retrieval:     #569b93;
-  --layer-5-tools:         #e0a53c;
+  --layer-2-harness:       #2f5f9c;
+  --layer-3-agent:        #5b9bc4;
+  --layer-4-context:     #569b93;
+  --layer-5-governance:         #e0a53c;
   --layer-6-orchestration: #d9682b;
-  --layer-7-governance:    #46586a;
+  --layer-7-product:    #46586a;
 }
 
 /* ── Dark theme (default) ─────────────────────────────────── */
@@ -1065,12 +1065,12 @@ li {
 }
 
 .layer-stack li:nth-child(1) { --layer-color: var(--layer-1-model); }
-.layer-stack li:nth-child(2) { --layer-color: var(--layer-2-context); }
-.layer-stack li:nth-child(3) { --layer-color: var(--layer-3-memory); }
-.layer-stack li:nth-child(4) { --layer-color: var(--layer-4-retrieval); }
-.layer-stack li:nth-child(5) { --layer-color: var(--layer-5-tools); }
+.layer-stack li:nth-child(2) { --layer-color: var(--layer-2-harness); }
+.layer-stack li:nth-child(3) { --layer-color: var(--layer-3-agent); }
+.layer-stack li:nth-child(4) { --layer-color: var(--layer-4-context); }
+.layer-stack li:nth-child(5) { --layer-color: var(--layer-5-governance); }
 .layer-stack li:nth-child(6) { --layer-color: var(--layer-6-orchestration); }
-.layer-stack li:nth-child(7) { --layer-color: var(--layer-7-governance); }
+.layer-stack li:nth-child(7) { --layer-color: var(--layer-7-product); }
 
 /* Layer 1 is the model itself — dark plate needs a lighter rule in dark mode */
 [data-theme="dark"] .layer-stack li:nth-child(1) { --layer-color: #64798f; }
