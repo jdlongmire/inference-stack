@@ -241,12 +241,21 @@ a:hover {
   width: 100%;
 }
 
+/* This was absolutely positioned against the header container. The container is no
+   longer position:relative (see .site-title above), so it resolved against the
+   viewport and overflowed the right edge. It is a normal flex item now. */
 @media (min-width: 769px) {
   .search-theme-group {
-    position: absolute;
-    right: 0;
     width: auto;
     order: 0;
+    flex-shrink: 0;
+  }
+}
+
+/* The header carries three groups; it needs more room than the reading column. */
+@media (min-width: 769px) {
+  .site-header .container {
+    max-width: 1140px;
   }
 }
 
