@@ -3,6 +3,9 @@
 Four category banners for articles, shorts and LinkedIn posts. Native size **836x470**
 (≈16:9), extracted from `_source-sheet.png`.
 
+**All four are cleared for use** as of the 2026-08-23 revision. Every one passed the
+checklist at the bottom of this file.
+
 ## Usage
 
 In an article's front matter:
@@ -17,55 +20,48 @@ the article body. Set both to the same file unless there is a reason not to.
 
 ## The set
 
-| File | Category | Tagline | Status |
+| File | Category | Tagline | Use for |
 |---|---|---|---|
-| `concept-explainer.png` | Concept / Explainer | Ideas. Clarity. Understanding. | **ready** |
-| `commentary-opinion.png` | Commentary / Opinion | Perspective. Insight. Provocation. | **ready** |
-| `architecture.png` | Architecture | Systems. Layers. Connections. | **do not publish**, see below |
-| `research-technical.png` | Research / Technical | Depth. Rigor. Evidence. | **do not publish**, see below |
+| `architecture.png` | Architecture | Systems. Layers. Connections. | Posts about the stack itself, or any named layer |
+| `concept-explainer.png` | Concept / Explainer | Ideas. Clarity. Understanding. | Introducing an idea, defining a term |
+| `research-technical.png` | Research / Technical | Depth. Rigor. Evidence. | Papers, evidence-led argument, measurement |
+| `commentary-opinion.png` | Commentary / Opinion | Perspective. Insight. Provocation. | Position pieces, industry commentary |
 
-## Superseded in purpose: `architecture.png`
+`architecture.png` and `research-technical.png` both name the seven layers and both now
+match [`/stack/`](../../../stack/index.md). The other two carry no layer text.
 
-The labelled-diagram job that `architecture.png` was doing is now done properly by
-[`../stack-reference.png`](../stack-reference.png) (1536x1024, revised 2026-08-23), which
-passes the full checklist: seven layers, seven distinct names each appearing once, seven
-distinct icons consistently paired between plate and panel, and every string a real word
-rendered once. It is published on [`/stack/`](../../../stack/index.md).
+## What the revision fixed
 
-A 16:9 `architecture` banner is still worth having for post headers, since the reference
-graphic is 3:2 and does not crop to a banner without losing the label column. The prompt
-in [REGENERATION-BRIEF.md](REGENERATION-BRIEF.md) still applies for that.
+The first cut of `architecture.png` labelled the stack with a superseded draft taxonomy,
+printed eight labels for seven layers, and repeated "RETRIEVAL" across two different
+icons. `research-technical.png` had the same taxonomy problem plus rendering artifacts:
+"CONTEXT" and "MEMORY" each printed twice, and a corrupted `OUTPU 1T'f` above "OUTPUT".
 
-## Why two are held back
+Both are resolved. `research-technical.png` also improved conceptually: Memory, Retrieval,
+Tools and IO/Systems are now drawn as *components* in a supporting row rather than as
+competing top-level layers, which is both correct and a clearer diagram than the original.
 
-Both carry rendered text that is wrong, and both would be read as authoritative because
-they look like a legend for the framework.
+## Known, accepted
 
-**`architecture.png`** labels the stack with the superseded draft taxonomy — Model,
-Context, Memory, Retrieval, Tools, Orchestration, Human — rather than the real one
-(Model, Harness, Agent, Context, Governance, Orchestration, Product). It also prints
-**eight** labels for a seven-layer framework, with **"RETRIEVAL" appearing twice**: once
-against a database icon and once against a magnifier. The database icon is itself reused
-for both "MEMORY" and the first "RETRIEVAL".
+- **Blueprint micro-text.** `research-technical.png` carries illegible filler glyphs in
+  the title-block strip along its bottom edge, in the manner of a real drawing's
+  annotation block. At display size these are 3-4px and read as texture rather than
+  words. Accepted rather than fixed; worth revisiting only if the banner is ever printed
+  or shown above ~1600px.
+- **Resolution.** 836px wide is below what LinkedIn (1200x627) and Open Graph (1200x630)
+  prefer, so these upscale on social and will look slightly soft. A re-export at 1600x900
+  is still the outstanding ask.
 
-**`research-technical.png`** has the same taxonomy problem plus text-rendering artifacts:
-"CONTEXT" printed twice inside one box, "MEMORY" twice with a garbled glyph, and a
-corrupted "OUTPU 1T'f" above "OUTPUT". There are stray scribble marks near the MODEL and
-RETRIEVAL boxes.
+## Checklist for any future banner that names the layers
 
-The two ready banners carry no layer text, which is exactly why they are unaffected.
+The rule in `mode.md`: anything that names or depicts the layers must agree with
+`/stack/`. Before replacing a file here:
 
-To bring the held-back two into service, regenerate them against the seven real layers.
-**Paste-ready prompts and the full rationale are in
-[REGENERATION-BRIEF.md](REGENERATION-BRIEF.md)**, which also carries the pre-ship
-checklist. Anything that names the layers must agree with
-[`/stack/`](../../../stack/index.md), and the layer colours come from the `--layer-*`
-tokens in `assets/css/style.css`.
-
-## Resolution note
-
-836px wide is below what LinkedIn and Open Graph prefer (1200x627 and 1200x630). These
-will be upscaled by those platforms and will look soft. Higher-resolution exports from
-the original source would be worth having before these carry a launch post.
+- Count the layers. Seven, not six, not eight.
+- Read every label. Seven distinct names, in the documented order, each appearing once:
+  Model, Harness, Agent, Context, Governance, Orchestration, Product.
+- Check each icon is used once and is paired consistently wherever it repeats.
+- Zoom to at least 300% and read every other string, including small text inside boxes,
+  for garbling and duplication.
 
 Human-Curated, AI-Enabled (HCAE)

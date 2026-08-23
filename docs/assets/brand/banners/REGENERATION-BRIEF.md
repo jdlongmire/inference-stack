@@ -6,11 +6,13 @@ prompt can be edited without losing the reasoning behind it.
 
 ---
 
-> **Status 2026-08-23.** A revised reference graphic passed the checklist and is published
-> on `/stack/` as `assets/brand/stack-reference.png`. It replaces `architecture.png` as
-> the authoritative labelled diagram, but it is 3:2 and does not crop to a banner, so
-> section 1 below still stands if a 16:9 architecture banner is wanted. Section 2
-> (`research-technical.png`) is untouched and still needs regenerating.
+> **Status: both banners regenerated and cleared, 2026-08-23.** `architecture.png` and
+> `research-technical.png` both passed the checklist and are in service. The prompts below
+> are kept as the working spec for any future banner that names the layers, not as
+> outstanding work. The one remaining ask is the 1600x900 re-export in section 3.
+>
+> A separate 3:2 reference poster, `assets/brand/stack-reference.png`, is published on
+> `/stack/` and is the authoritative labelled diagram.
 
 ## Shared brand facts
 
