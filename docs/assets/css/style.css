@@ -14,11 +14,11 @@
 
   --layer-1-model:         #1c2b3a;
   --layer-2-harness:       #2f5f9c;
-  --layer-3-agent:        #5b9bc4;
-  --layer-4-context:     #569b93;
-  --layer-5-governance:         #e0a53c;
+  --layer-3-agent:         #5b9bc4;
+  --layer-4-context:       #569b93;
+  --layer-5-governance:    #e0a53c;
   --layer-6-orchestration: #d9682b;
-  --layer-7-product:    #46586a;
+  --layer-7-product:       #46586a;
 }
 
 /* ── Dark theme (default) ─────────────────────────────────── */

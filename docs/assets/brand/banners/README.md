@@ -44,8 +44,11 @@ RETRIEVAL boxes.
 The two ready banners carry no layer text, which is exactly why they are unaffected.
 
 To bring the held-back two into service, regenerate them against the seven real layers.
-Anything that names the layers should agree with [`/stack/`](../../../stack/index.md),
-and the layer colours come from the `--layer-*` tokens in `assets/css/style.css`.
+**Paste-ready prompts and the full rationale are in
+[REGENERATION-BRIEF.md](REGENERATION-BRIEF.md)**, which also carries the pre-ship
+checklist. Anything that names the layers must agree with
+[`/stack/`](../../../stack/index.md), and the layer colours come from the `--layer-*`
+tokens in `assets/css/style.css`.
 
 ## Resolution note
 
