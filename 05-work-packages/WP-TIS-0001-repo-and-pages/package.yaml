@@ -1,6 +1,6 @@
 id: WP-TIS-0001
 title: Stand up The Inference Stack repo and Pages site
-status: in-progress
+status: done
 scope: >
   Stand up jdlongmire/inference-stack from longmire-repo-template, migrate the
   AI-Research publication into docs/ under the new brand, define and publish the
@@ -15,8 +15,7 @@ authority_boundary: >
   and rebrand the site content, enable GitHub Pages, and commit and push to main.
 
   NOT authorized without a fresh explicit go: the inference.thinxai.net DNS record
-  (JD's live domain); the CI workflow under .github/ (harness hard-stop, needs a
-  Chief-Architect override); any external post announcing the site; any change to
+  (JD's live domain, done); any external post announcing the site; any change to
   AI-Research or aithinkr.net; restating the seven layer names, which
   were supplied by JD 2026-08-23 and are settled.
 actions:
@@ -29,11 +28,14 @@ actions:
   - Rewrite cross-links to the new domain and repo; repoint Giscus (done)
   - Enable GitHub Pages on main /docs with CNAME inference.thinxai.net
   - Add the CNAME DNS record, DNS-only, at Cloudflare (JD or authorized)
-  - Add CI build gate and branch protection (blocked on override)
+  - CI build gate and branch protection: decided against by JD, see notes.md
 verification: >
   A machine check, not an assertion: the Pages build reports success; curl of
   https://inference.thinxai.net/ returns 200 with a valid certificate; the site
   search index resolves; no reference to ITIO or AI Operations Center survives
-  anywhere in the tree (grep -ri); every internal link in the built _site resolves
-  to a real file (the CI link check, once landed).
-disposition: open
+  anywhere in the tree (grep -ri); every internal link resolves.
+
+  Result 2026-08-23, all green: build "built"; https 200 with a valid Let's Encrypt
+  cert for inference.thinxai.net, http 301 to https; 47 sitemap URLs fetched, 616
+  internal link instances (70 distinct), 0 broken; ITIO grep clean.
+disposition: closed

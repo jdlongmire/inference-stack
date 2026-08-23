@@ -40,14 +40,28 @@
   `https://aithinkr.net/articles/...` now use `/articles/...` so they resolve here
   instead of bouncing readers to the archive.
 
+## Verification run
+
+Link integrity after the scripted cross-link rewrite, checked against the live site
+2026-08-23: all 47 sitemap URLs fetched, 616 internal link instances (70 distinct)
+resolved, **0 broken**. This is the check CI would have automated; it was run once
+because the risk it covers was one-time.
+
 ## Not done, and why
 
-- **CI workflow** (`.github/workflows/pages.yml`) — drafted and blocked by the harness
-  hard-stop on CI surfaces. Needs a Chief-Architect override. It would give a build gate
-  on PRs plus a broken-internal-link check, which matters more than usual here because
-  36 migrated articles just had their links rewritten.
-- **Branch protection** — deliberately sequenced after CI, since a required-check rule
-  needs a check to require.
+- **CI workflow and branch protection** — **decided against** (JD, 2026-08-23: "We don't
+  need CI do we?"). Correct call, and the reasoning is worth keeping so it is not
+  relitigated. The build gate duplicates GitHub Pages, which already builds on every push
+  and fails loudly. The PR gate and branch protection have nothing to gate, since there is
+  no PR flow and both committers push straight to main. The only genuine value was the
+  broken-internal-link check, and that was a one-time concern from the scripted link
+  rewrite rather than a recurring one, so it was run once against the live site instead
+  (result below). Revisit only if the repo gains outside contributors or a PR flow.
+
+  This is a deliberate, reasoned exception to [[feedback-institutionalize-devops-enforcement]],
+  not an oversight. That rule targets governed product repos; a single-author publication
+  site is a different risk profile and the enforcement would be ceremony.
+
 - **DNS record** — `inference` CNAME to `jdlongmire.github.io`, **DNS-only / grey cloud**.
   Proxying it blocks the ACME challenge and Pages never issues a certificate.
 
