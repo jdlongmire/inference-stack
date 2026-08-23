@@ -6,7 +6,7 @@
 
 A frontier model is a probabilistic calculator over encoded patterns. It is not the
 system. This repository is the home of the argument that **the consequential engineering
-is no longer inside the weights** — and of the articles, shorts, and framework that
+is no longer inside the weights**, and of the articles, shorts, and framework that
 develop it.
 
 Site: **https://inference.thinxai.net**
@@ -55,7 +55,7 @@ there before 2026-08-23 are carried here and are the versions under active maint
 
 ## Author
 
-**James (JD) Longmire** — Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
+**James (JD) Longmire**, Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
 ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698).
 
 ## Licence

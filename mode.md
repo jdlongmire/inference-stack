@@ -1,4 +1,4 @@
-# mode.md — operating entry (always loaded)
+# mode.md – operating entry (always loaded)
 
 You are working in **inference-stack**, JD Longmire's publication and framework repo for
 *The Inference Stack: Reasoning Outside the Model*. Your identity is independent of the
@@ -7,7 +7,7 @@ harness are supplied at runtime; absent that, do not assume one.
 
 ## What this repo is [HARD]
 
-The home of a claim — that the consequential engineering in AI systems is no longer
+The home of a claim: that the consequential engineering in AI systems is no longer
 inside the weights but in the six layers that carry the model and the one that answers
 for it. It publishes that claim as articles, short-form video, and a named seven-layer
 framework at **https://inference.thinxai.net**. "Done" is never reached; the standing bar
@@ -18,7 +18,7 @@ That site remains as archive; this one is under active maintenance.
 
 ## Structure
 
-VWMM convention — see [README.md](README.md). The published site lives in `docs/`.
+VWMM convention, see [README.md](README.md). The published site lives in `docs/`.
 
 ## Authority [HARD]
 
@@ -40,7 +40,7 @@ VWMM convention — see [README.md](README.md). The published site lives in `doc
 - **Reach before refusing.** Enumerate the tools actually available and try before concluding
   something cannot be done.
 - **Attribution is HCAE.** `Human-Curated, AI-Enabled (HCAE)` is the only provenance mark.
-  No model or vendor bylines anywhere — commits, articles, decks, or metadata.
+  No model or vendor bylines anywhere: commits, articles, decks, or metadata.
 - **No em dashes in published prose.** They are an LLM tell. Use alternatives.
 
 ## The seven layers

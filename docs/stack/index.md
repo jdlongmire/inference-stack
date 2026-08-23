@@ -11,7 +11,7 @@ image: /assets/brand/og-banner.png
 </div>
 
 The industry talks about AI as though the model is the system. It is not. A frontier
-model is a probabilistic calculator over encoded patterns — extraordinary, general,
+model is a probabilistic calculator over encoded patterns: extraordinary, general,
 and by itself inert. Everything that makes it useful, trustworthy, or dangerous is
 built around it.
 
@@ -38,7 +38,7 @@ they are what the whole thing rests on.
 
 ---
 
-## L1 — Model
+## L1 · Model
 
 The weights, and the inference that runs them. A model encodes patterns from a training
 distribution and samples from them. That is a genuine and hard-won capability, and it is
@@ -49,17 +49,17 @@ Model capability is improving quickly and commoditising just as quickly. Two yea
 frontier progress moves a capability from differentiator to table stakes. Anything an
 organisation's advantage rests on at this layer has a short half-life.
 
-## L2 — Context
+## L2 · Context
 
 Everything assembled and handed to the model for a given call: instructions, working
 set, retrieved material, conversation state. This is the layer most teams under-engineer
 and it fails in ways that look like model failure.
 
-Context is finite. It is also contested — every subsystem wants room in it — and the
-allocation is a design decision, not an accident. Systems that manage it explicitly
+Context is finite. It is also contested, since every subsystem wants room in it, and the
+allocation is a design decision rather than an accident. Systems that manage it explicitly
 degrade gracefully. Systems that do not hit a cliff.
 
-## L3 — Memory
+## L3 · Memory
 
 State that survives the session. A model with no memory restarts from zero every time,
 which caps it at the level of a very capable stranger. Memory is what makes accumulated
@@ -70,7 +70,7 @@ is retrieved and when, how staleness is detected, and what happens when a memory
 contradicts current state. Written-down facts that quietly go wrong are worse than no
 memory at all.
 
-## L4 — Retrieval
+## L4 · Retrieval
 
 Grounding in sources the model does not contain: search, document corpora, databases,
 live systems. Retrieval is how a claim acquires evidence rather than plausibility.
@@ -80,18 +80,18 @@ damaging than retrieval that returns nothing, because it launders a guess into a
 apparent citation. Provenance and source discipline belong at this layer, not bolted on
 afterwards.
 
-## L5 — Tools
+## L5 · Tools
 
 The point at which output stops being text and starts having consequences: writing
 files, calling APIs, moving money, changing infrastructure. Tools are what turn a model
 into an actor.
 
 Blast radius becomes an engineering concern here. Which operations are reversible, which
-require confirmation, which are categorically refused — these are design decisions that
+require confirmation, which are categorically refused: these are design decisions that
 have to be made deliberately and enforced structurally, because a model asked nicely not
 to do something will eventually do it.
 
-## L6 — Orchestration
+## L6 · Orchestration
 
 Control flow across models, agents, and steps: routing, decomposition, parallelism,
 verification, retry. Orchestration is what turns a call into a system.
@@ -101,7 +101,7 @@ problem into checkable pieces, running independent checks, reconciling the resul
 knowing when to stop are structural properties of the harness rather than emergent
 properties of the weights.
 
-## L7 — Governance
+## L7 · Governance
 
 The human who curates the output and answers for it. This layer is the reason the stack
 is worth building carefully, and it is the one most often described as friction.

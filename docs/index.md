@@ -5,11 +5,11 @@ image: /assets/brand/og-banner.png
 ---
 
 <div class="stack-hero">
-  <img src="{{ '/assets/brand/lockup-dark-640.png' | relative_url }}" alt="The Inference Stack — Reasoning Outside the Model" />
+  <img src="{{ '/assets/brand/lockup-dark-640.png' | relative_url }}" alt="The Inference Stack – Reasoning Outside the Model" />
   <p class="hero-thesis">
     A frontier model is a probabilistic calculator over encoded patterns. It is not
-    the system. <strong>The consequential engineering is no longer inside the weights</strong>
-    — it is in the six layers that carry the model and the one that answers for it.
+    the system. <strong>The consequential engineering is no longer inside the weights</strong>.
+    It is in the six layers that carry the model, and the one that answers for it.
   </p>
 </div>
 
@@ -17,11 +17,11 @@ image: /assets/brand/og-banner.png
 
 <ul class="layer-stack">
   <li><span class="layer-num">L1</span><span><span class="layer-name">Model</span><span class="layer-desc">The weights. A probabilistic calculator over encoded patterns, bounded by its training distribution. Increasingly commoditised, and increasingly not where the differentiation lives.</span></span></li>
-  <li><span class="layer-num">L2</span><span><span class="layer-name">Context</span><span class="layer-desc">What the model is given to reason over: instructions, working set, assembled state. Finite, contested, and governed — the layer where the token cliff bites.</span></span></li>
-  <li><span class="layer-num">L3</span><span><span class="layer-name">Memory</span><span class="layer-desc">State that survives the session. What gets written down, what gets recalled, what decays — the difference between a tool and a colleague.</span></span></li>
-  <li><span class="layer-num">L4</span><span><span class="layer-name">Retrieval</span><span class="layer-desc">Grounding in sources the model does not contain. Search, corpora, provenance — where claims acquire evidence rather than plausibility.</span></span></li>
+  <li><span class="layer-num">L2</span><span><span class="layer-name">Context</span><span class="layer-desc">What the model is given to reason over: instructions, working set, assembled state. Finite, contested, and governed. This is the layer where the token cliff bites.</span></span></li>
+  <li><span class="layer-num">L3</span><span><span class="layer-name">Memory</span><span class="layer-desc">State that survives the session. What gets written down, what gets recalled, what decays. The difference between a tool and a colleague.</span></span></li>
+  <li><span class="layer-num">L4</span><span><span class="layer-name">Retrieval</span><span class="layer-desc">Grounding in sources the model does not contain. Search, corpora, provenance: where claims acquire evidence rather than plausibility.</span></span></li>
   <li><span class="layer-num">L5</span><span><span class="layer-name">Tools</span><span class="layer-desc">Action on the world. The point at which output stops being text and starts having consequences, and the point at which blast radius becomes an engineering concern.</span></span></li>
-  <li><span class="layer-num">L6</span><span><span class="layer-name">Orchestration</span><span class="layer-desc">Control flow across models, agents, and steps. Routing, decomposition, verification, retry — the layer that turns a call into a system.</span></span></li>
+  <li><span class="layer-num">L6</span><span><span class="layer-name">Orchestration</span><span class="layer-desc">Control flow across models, agents, and steps. Routing, decomposition, verification, retry. The layer that turns a call into a system.</span></span></li>
   <li><span class="layer-num">L7</span><span><span class="layer-name">Governance</span><span class="layer-desc">The human who curates and answers for the result. Not a compliance wrapper but the load-bearing foundation: Human-Curated, AI-Enabled.</span></span></li>
 </ul>
 
@@ -49,7 +49,7 @@ image: /assets/brand/og-banner.png
 
 ## Author
 
-**James (JD) Longmire** — Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
+**James (JD) Longmire**, Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
 
 - ORCID: [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698)
 - Email: jdlongmire@outlook.com
