@@ -21,42 +21,10 @@
   --layer-7-governance:    #46586a;
 }
 
-/* ── Light theme (default) ────────────────────────────────── */
+/* ── Dark theme (default) ─────────────────────────────────── */
+/* :root carries the dark values so a page renders dark before any JS runs. */
 
 :root,
-[data-theme="light"] {
-  --bg-primary:   #ffffff;
-  --bg-secondary: #f4f6f8;
-  --bg-tertiary:  #e7ecf1;
-
-  --text-primary:   #0d1a27;
-  --text-secondary: #4a5b6c;
-  --text-muted:     #6d7d8d;
-  --text-tertiary:  #93a1ae;
-
-  --border-color:  rgba(13, 26, 39, 0.10);
-  --border-subtle: rgba(13, 26, 39, 0.05);
-
-  --accent-primary: #0d1a27;
-  --accent-hover:   rgba(13, 26, 39, 0.7);
-  --link-color:     #2f5f9c;
-  --link-hover:     #0d1a27;
-
-  --code-bg: #f4f6f8;
-
-  --shadow:    0 2px 8px rgba(13, 26, 39, 0.08);
-  --shadow-lg: 0 4px 16px rgba(13, 26, 39, 0.14);
-
-  --hover-tint:        rgba(13, 26, 39, 0.03);
-  --hover-tint-strong: rgba(13, 26, 39, 0.06);
-  --active-tint:       rgba(13, 26, 39, 0.02);
-  --section-tint:      rgba(13, 26, 39, 0.02);
-
-  --hero-bg: #0b1420;
-}
-
-/* ── Dark theme ───────────────────────────────────────────── */
-
 [data-theme="dark"] {
   --bg-primary:   #0b1420;
   --bg-secondary: #111d2c;
@@ -86,6 +54,39 @@
   --section-tint:      rgba(11, 20, 32, 0.35);
 
   --hero-bg: #00040b;
+}
+
+/* ── Light theme (opt-in) ─────────────────────────────────── */
+
+[data-theme="light"] {
+  --bg-primary:   #ffffff;
+  --bg-secondary: #f4f6f8;
+  --bg-tertiary:  #e7ecf1;
+
+  --text-primary:   #0d1a27;
+  --text-secondary: #4a5b6c;
+  --text-muted:     #6d7d8d;
+  --text-tertiary:  #93a1ae;
+
+  --border-color:  rgba(13, 26, 39, 0.10);
+  --border-subtle: rgba(13, 26, 39, 0.05);
+
+  --accent-primary: #0d1a27;
+  --accent-hover:   rgba(13, 26, 39, 0.7);
+  --link-color:     #2f5f9c;
+  --link-hover:     #0d1a27;
+
+  --code-bg: #f4f6f8;
+
+  --shadow:    0 2px 8px rgba(13, 26, 39, 0.08);
+  --shadow-lg: 0 4px 16px rgba(13, 26, 39, 0.14);
+
+  --hover-tint:        rgba(13, 26, 39, 0.03);
+  --hover-tint-strong: rgba(13, 26, 39, 0.06);
+  --active-tint:       rgba(13, 26, 39, 0.02);
+  --section-tint:      rgba(13, 26, 39, 0.02);
+
+  --hero-bg: #0b1420;
 }
 
 /* ── Component tokens ─────────────────────────────────────── */

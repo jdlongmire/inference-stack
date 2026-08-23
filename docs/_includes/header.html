@@ -28,11 +28,9 @@
   const icon = document.getElementById('theme-icon');
   const root = document.documentElement;
 
-  const stored = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = stored || (prefersDark ? 'dark' : 'light');
-
-  root.setAttribute('data-theme', theme);
+  // head.html already set data-theme before paint. Read it back rather than
+  // recomputing, so the two cannot disagree. Dark is the default.
+  const theme = root.getAttribute('data-theme') || 'dark';
   icon.textContent = theme === 'dark' ? '☀' : '☾';
 
   toggle.addEventListener('click', function() {
