@@ -27,8 +27,13 @@ the article body. Set both to the same file unless there is a reason not to.
 | `research-technical.png` | Research / Technical | Depth. Rigor. Evidence. | Papers, evidence-led argument, measurement |
 | `commentary-opinion.png` | Commentary / Opinion | Perspective. Insight. Provocation. | Position pieces, industry commentary |
 
-`architecture.png` and `research-technical.png` both name the seven layers and both now
+`architecture.png` and `research-technical.png` both name the seven layers and both
 match [`/stack/`](../../../stack/index.md). The other two carry no layer text.
+
+`architecture.png` now carries a one-line gloss per layer, so it works as a standalone
+explainer rather than only as decoration. `research-technical.png` nests Tools, Memory,
+Retrieval and Systems *inside* the L2 Harness box and adds Identity & Scope under L3
+Agent, which is the correct containment: those are harness components, not layers.
 
 ## What the revision fixed
 
@@ -43,11 +48,11 @@ competing top-level layers, which is both correct and a clearer diagram than the
 
 ## Known, accepted
 
-- **Blueprint micro-text.** `research-technical.png` carries illegible filler glyphs in
-  the title-block strip along its bottom edge, in the manner of a real drawing's
-  annotation block. At display size these are 3-4px and read as texture rather than
-  words. Accepted rather than fixed; worth revisiting only if the banner is ever printed
-  or shown above ~1600px.
+- **Heading tint is inconsistent on `architecture.png`.** Sampled: L3 Agent, L4 Context
+  and L6 Orchestration render tinted toward their layer colour (saturation 0.25-0.45)
+  while L1 Model, L2 Harness, L5 Governance and L7 Product render white (saturation
+  under 0.16). Either all seven should be white or all seven tinted. Cosmetic, reads as
+  a gradient effect at display size, not worth another round on its own.
 - **Resolution.** 836px wide is below what LinkedIn (1200x627) and Open Graph (1200x630)
   prefer, so these upscale on social and will look slightly soft. A re-export at 1600x900
   is still the outstanding ask.
