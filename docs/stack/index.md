@@ -8,6 +8,10 @@ image: /assets/brand/og-banner.png
 <div class="topic-header">
   <h1>The Inference Stack</h1>
   <p>Reasoning Outside the Model</p>
+  <p class="byline">
+    <a href="https://orcid.org/0009-0009-1383-7698">James (JD) Longmire</a> &amp;
+    <a href="https://orcid.org/0009-0006-7608-9322">Micah Longmire</a>
+  </p>
 </div>
 
 The industry talks about AI as though the model is the system. It is not. A frontier
@@ -117,5 +121,10 @@ names the arrangement: the machine does the work, the person owns the result.
 
 This framework is under active development. The layers are stable enough to reason with
 and loose enough to argue about; the articles and shorts on this site develop them.
+
+## Citation
+
+> Longmire, J.D. & Longmire, M. (2026). *The Inference Stack: Reasoning Outside the Model.*
+> https://inference.thinxai.net/stack/
 
 *Human-Curated, AI-Enabled (HCAE)*

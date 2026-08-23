@@ -47,7 +47,7 @@ image: /assets/brand/og-banner.png
 
 ---
 
-## Author
+## Authors
 
 **James (JD) Longmire**, Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
 
@@ -56,4 +56,9 @@ image: /assets/brand/og-banner.png
 - GitHub: [jdlongmire](https://github.com/jdlongmire)
 - Substack: [AI Research & Philosophy](https://airesearchandphilosophy.substack.com/)
 
-**AI assistance disclosure.** This work was developed with assistance from AI language models. All substantive claims, arguments, and errors remain the author's responsibility. **Human-Curated, AI-Enabled (HCAE)**.
+**Micah Longmire**, CEO and CTO of Ologos Corp; senior systems and AI architect.
+
+- ORCID: [0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322)
+- GitHub: [bobbyhiddn](https://github.com/bobbyhiddn)
+
+**AI assistance disclosure.** This work was developed with assistance from AI language models. All substantive claims, arguments, and errors remain the authors' responsibility. **Human-Curated, AI-Enabled (HCAE)**.

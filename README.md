@@ -53,10 +53,17 @@ This site supersedes and subsumes **[AI-Research](https://github.com/jdlongmire/
 (aithinkr.net), which remains in place as the historical archive. Articles published
 there before 2026-08-23 are carried here and are the versions under active maintenance.
 
-## Author
+## Authors
 
 **James (JD) Longmire**, Northrop Grumman Fellow, Chief Architect for Digital Ecosystems.
 ORCID [0009-0009-1383-7698](https://orcid.org/0009-0009-1383-7698).
+
+**Micah Longmire**, CEO and CTO of Ologos Corp; senior systems and AI architect.
+ORCID [0009-0006-7608-9322](https://orcid.org/0009-0006-7608-9322).
+
+Articles carried over from the `AI-Research` archive are single-authored by JD Longmire
+and retain their original bylines. Co-authorship applies to The Inference Stack itself:
+the framework and the work published under it from 2026-08-23 forward.
 
 ## Licence
 

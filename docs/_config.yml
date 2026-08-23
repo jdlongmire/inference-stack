@@ -1,7 +1,16 @@
 # The Inference Stack – Jekyll configuration
 title: The Inference Stack
 description: "Reasoning Outside the Model. The seven layers of engineering above the weights."
+# site.author is the per-page fallback for the 25 inherited articles that carry no
+# byline of their own. It stays single-author deliberately: those articles predate the
+# co-authorship and Micah did not write them. Site- and framework-level authorship is
+# stated explicitly in `authors` below and rendered in the footer and on /stack/.
 author: "James (JD) Longmire"
+authors:
+  - name: "James (JD) Longmire"
+    orcid: "0009-0009-1383-7698"
+  - name: "Micah Longmire"
+    orcid: "0009-0006-7608-9322"
 email: jdlongmire@outlook.com
 url: "https://inference.thinxai.net"
 baseurl: ""
@@ -38,6 +47,7 @@ social:
   name: "James (JD) Longmire"
   links:
     - "https://orcid.org/0009-0009-1383-7698"
+    - "https://orcid.org/0009-0006-7608-9322"
     - "https://github.com/jdlongmire"
     - "https://zenodo.org/communities/ai-research-philosophy"
     - "https://airesearchandphilosophy.substack.com/"
