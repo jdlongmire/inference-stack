@@ -1,7 +1,15 @@
 # Post banners
 
-Four category banners for articles, shorts and LinkedIn posts. Native size **836x470**
-(≈16:9), extracted from `_source-sheet.png`.
+Four category banners for articles, shorts and LinkedIn posts.
+
+**Delivery size 1200x675** (16:9). The generator caps at 836x470, so the shipped files are
+Lanczos upscales with mild unsharp, measured crisper on dense text than a plain resize.
+The untouched 836x470 originals are kept alongside as `*-836.png` for any future
+re-render, and the 4-up sheet as `_source-sheet.png`.
+
+A 4px inset is taken off every edge before scaling: splitting the 4-up sheet leaves a
+bright 2-4px seam on whichever edges faced the interior divider, which would otherwise
+render as a stray light line along the banner.
 
 **All four are cleared for use** as of the 2026-08-23 revision. Every one passed the
 checklist at the bottom of this file.
@@ -48,14 +56,20 @@ competing top-level layers, which is both correct and a clearer diagram than the
 
 ## Known, accepted
 
-- **Heading tint is inconsistent on `architecture.png`.** Sampled: L3 Agent, L4 Context
-  and L6 Orchestration render tinted toward their layer colour (saturation 0.25-0.45)
-  while L1 Model, L2 Harness, L5 Governance and L7 Product render white (saturation
-  under 0.16). Either all seven should be white or all seven tinted. Cosmetic, reads as
-  a gradient effect at display size, not worth another round on its own.
-- **Resolution.** 836px wide is below what LinkedIn (1200x627) and Open Graph (1200x630)
-  prefer, so these upscale on social and will look slightly soft. A re-export at 1600x900
-  is still the outstanding ask.
+- **`architecture.png` draws eight plates for seven layers.** Measured, not eyeballed:
+  seven leader lines against eight plate rims, and the lines do not land consistently on
+  a plate. The seven layers themselves are enumerated correctly and completely in the
+  label column, which is what a reader actually reads, so the error is confined to the
+  decorative stack. It is still wrong in a diagram whose entire point is seven, and the
+  prior revision had this right with seven plates each carrying its own icon. Fix on the
+  next pass by specifying "exactly seven plates, one leader line per plate, each line
+  terminating on its own plate."
+- **Heading tint** on `architecture.png` now runs as a deliberate cool-to-warm progression
+  (saturation 0.18 at L1 rising to 0.90 at L7) rather than the three arbitrary tinted rows
+  of the previous revision. Resolved.
+- **Resolution** is handled by upscaling rather than at source, since the generator caps
+  at 836x470. Files are 1200x675 and will still be slightly soft against native 1200px
+  artwork. Good enough for LinkedIn and Open Graph, both of which accept 16:9.
 
 ## Checklist for any future banner that names the layers
 
