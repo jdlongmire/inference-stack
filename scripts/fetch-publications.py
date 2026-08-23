@@ -57,7 +57,9 @@ def creator_name(cr):
 
 
 # Domain is assigned from title keywords, most specific first. The corpus spans four
-# research programmes and the page groups by them, so a wrong bucket is visible.
+# research programmes; only "technology" is published on this site, so a work landing in
+# the wrong bucket either appears where it should not or vanishes from the index. The
+# script keeps classifying all four so a future re-scope needs no re-derivation.
 RULES = [
     ("geology", ("flood", "hydrotectonic", "continental", "deep time", "geolog",
                  "stratigraph", "radiometric")),
@@ -77,7 +79,7 @@ RULES = [
 # Transcendental Argument paper matches the theology rule but is Part I of the Logic
 # Realism programme and belongs with it.
 OVERRIDES = {
-    "logic packets and the limits of derivation": "ai",
+    "logic packets and the limits of derivation": "technology",
     "the transcendental argument for being": "physics",
 }
 
@@ -90,7 +92,7 @@ def domain_of(title):
     for name, keys in RULES:
         if any(k in t for k in keys):
             return name
-    return "ai"
+    return "technology"
 
 
 def collect():
