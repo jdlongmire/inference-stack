@@ -14,6 +14,12 @@ image: /assets/brand/og-banner.png
   </p>
 </div>
 
+<p class="stack-reference">
+  <img src="{{ '/assets/brand/stack-reference-1200.png' | relative_url }}"
+       alt="The seven layers of The Inference Stack: Model, Harness, Agent, Context, Governance, Orchestration, Product"
+       width="1200" height="800" loading="lazy">
+</p>
+
 The industry talks about AI as though the model is the system. It is not. A frontier
 model is a probabilistic calculator over encoded patterns: extraordinary, general, and by
 itself inert. Everything that makes it useful, trustworthy, or dangerous is built around it.

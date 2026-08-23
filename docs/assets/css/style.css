@@ -1119,3 +1119,14 @@ li {
   color: var(--text-muted);
 }
 .topic-header .byline a { color: var(--text-secondary); }
+
+/* Reference graphic on /stack/ */
+.stack-reference {
+  margin: 2rem 0 2.5rem;
+}
+.stack-reference img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+}

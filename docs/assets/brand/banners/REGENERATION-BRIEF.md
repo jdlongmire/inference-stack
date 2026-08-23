@@ -6,6 +6,12 @@ prompt can be edited without losing the reasoning behind it.
 
 ---
 
+> **Status 2026-08-23.** A revised reference graphic passed the checklist and is published
+> on `/stack/` as `assets/brand/stack-reference.png`. It replaces `architecture.png` as
+> the authoritative labelled diagram, but it is 3:2 and does not crop to a banner, so
+> section 1 below still stands if a 16:9 architecture banner is wanted. Section 2
+> (`research-technical.png`) is untouched and still needs regenerating.
+
 ## Shared brand facts
 
 Any prompt should carry these. They are the canonical values, taken from
@@ -177,5 +183,20 @@ The rule in `mode.md`: anything that names or depicts the layers must agree with
 - Read every other string in the image for garbling and duplication, including small
   text inside boxes.
 - Confirm the plate colours run in the documented order.
+
+## Palette note: the graphic and the CSS deliberately differ
+
+The reference graphic runs a continuous blue-to-orange gradient. The `--layer-*` CSS
+tokens do not, and should not be changed to match.
+
+The reason is measurable. As seven stacked 4px accent bars, the graphic's gradient has a
+smallest adjacent CIELAB deltaE of **5.8** (L1 Model against L2 Harness, both near-identical
+blues). The current tokens have a smallest adjacent deltaE of **27.5**. Below roughly 10,
+adjacent bars are not reliably distinguishable.
+
+The gradient works in the graphic because the plates are separated in space and each one
+carries its own label. It would not work as a legend of bare colour bars. The two palettes
+serve different jobs and are allowed to disagree; what must never disagree is the layer
+names, their order, and their meanings.
 
 Human-Curated, AI-Enabled (HCAE)

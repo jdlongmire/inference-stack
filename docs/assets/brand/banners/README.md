@@ -24,6 +24,18 @@ the article body. Set both to the same file unless there is a reason not to.
 | `architecture.png` | Architecture | Systems. Layers. Connections. | **do not publish**, see below |
 | `research-technical.png` | Research / Technical | Depth. Rigor. Evidence. | **do not publish**, see below |
 
+## Superseded in purpose: `architecture.png`
+
+The labelled-diagram job that `architecture.png` was doing is now done properly by
+[`../stack-reference.png`](../stack-reference.png) (1536x1024, revised 2026-08-23), which
+passes the full checklist: seven layers, seven distinct names each appearing once, seven
+distinct icons consistently paired between plate and panel, and every string a real word
+rendered once. It is published on [`/stack/`](../../../stack/index.md).
+
+A 16:9 `architecture` banner is still worth having for post headers, since the reference
+graphic is 3:2 and does not crop to a banner without losing the label column. The prompt
+in [REGENERATION-BRIEF.md](REGENERATION-BRIEF.md) still applies for that.
+
 ## Why two are held back
 
 Both carry rendered text that is wrong, and both would be read as authoritative because
