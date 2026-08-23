@@ -2,7 +2,7 @@
 layout: default
 title: "Shorts"
 description: "Short-form video from The Inference Stack"
-image: /assets/brand/og-banner.png
+image: /assets/brand/banners/concept-explainer.png
 ---
 
 <div class="topic-header">
@@ -10,25 +10,27 @@ image: /assets/brand/og-banner.png
   <p>The argument, in ninety seconds to three minutes</p>
 </div>
 
-Short-form vertical video developed from the articles on this site. Each one takes a
-single claim from the stack and makes it standalone. Published to LinkedIn; the written
-version always lives here.
+Short-form vertical video developed from the articles on this site. Each takes a single
+claim from the stack and makes it standalone. The written version always lives here too.
 
-<div class="shorts-grid">
-
-  <div class="short-card">
-    <h3>The Token Cliff</h3>
-    <div class="meta">2:18 &middot; L1 Model</div>
-    <p>Model capability commoditises on a two-year clock. The differentiator is the layer above the model, and context is where that layer fails first.</p>
+{% assign shorts = site.data.shorts | where: "brand", "inference-stack" | sort: "date" | reverse %}
+{% for v in shorts %}
+<div class="short-feature">
+  <video class="short-video" controls preload="none"
+         poster="{{ v.poster | relative_url }}"
+         width="1080" height="1920">
+    <source src="{{ v.video | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video.
+    <a href="{{ v.video | relative_url }}">Download the file</a> instead.
+  </video>
+  <div class="short-feature-body">
+    <h2 id="{{ v.slug }}">{{ v.title }}</h2>
+    <p class="short-feature-meta">{{ v.duration }} &middot; {{ v.layer }} &middot; {{ v.date | date: "%B %-d, %Y" }}</p>
+    <p>{{ v.summary }}</p>
+    <p class="short-feature-tagline">{{ v.tagline }}</p>
   </div>
-
-  <div class="short-card">
-    <h3>Generative AI Changes the Operational Envelope</h3>
-    <div class="meta">1:40 &middot; L1 Model</div>
-    <p>A frontier model is a probabilistic calculator over encoded patterns. What that changes is the envelope of what can be attempted, not the nature of what is being run.</p>
-  </div>
-
 </div>
+{% endfor %}
 
 ## How these are made
 

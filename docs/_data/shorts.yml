@@ -1,0 +1,31 @@
+# Short-form video narrations, newest first.
+# Add an entry here and it appears on the landing page and /shorts/ automatically.
+# Only entries with `brand: inference-stack` are published; anything predating the
+# rebrand stays listed but unpublished so it is recorded without being shown.
+
+- slug: token-cliff
+  title: "The Token Cliff"
+  tagline: "Not which model. Who architects."
+  summary: >
+    Model capability commoditises on a two-year clock, so the differentiator is not
+    which model you picked. It is the layer above it, and the lock-in that layer
+    quietly accumulates.
+  layer: "L1 Model"
+  duration: "2:18"
+  date: 2026-08-23
+  video: /assets/video/token-cliff.mp4
+  poster: /assets/video/token-cliff-poster.jpg
+  brand: inference-stack
+
+- slug: generative-ai-envelope
+  title: "Generative AI Changes the Operational Envelope"
+  tagline: "A probabilistic calculator over encoded patterns."
+  summary: >
+    What generative AI changes is the envelope of what can be attempted, not the
+    nature of what is being run.
+  layer: "L1 Model"
+  duration: "1:40"
+  date: 2026-08-13
+  video: ~
+  poster: ~
+  brand: pre-rebrand   # carries the old ITIO branding; not published until rebuilt

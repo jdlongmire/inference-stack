@@ -29,6 +29,30 @@ image: /assets/brand/og-banner.png
 
 ---
 
+## Watch
+
+{% assign shorts = site.data.shorts | where: "brand", "inference-stack" | sort: "date" | reverse %}
+{% for v in shorts limit: 1 %}
+<div class="short-feature">
+  <video class="short-video" controls preload="none"
+         poster="{{ v.poster | relative_url }}"
+         width="1080" height="1920">
+    <source src="{{ v.video | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video.
+    <a href="{{ v.video | relative_url }}">Download the file</a> instead.
+  </video>
+  <div class="short-feature-body">
+    <h3>{{ v.title }}</h3>
+    <p class="short-feature-meta">{{ v.duration }} &middot; {{ v.layer }} &middot; {{ v.date | date: "%B %Y" }}</p>
+    <p>{{ v.summary }}</p>
+    <p class="short-feature-tagline">{{ v.tagline }}</p>
+    <a href="{{ '/shorts/' | relative_url }}" class="card-link">All shorts</a>
+  </div>
+</div>
+{% endfor %}
+
+---
+
 ## Latest articles
 
 <div class="paper-grid">

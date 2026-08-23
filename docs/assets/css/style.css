@@ -1189,3 +1189,47 @@ li {
   .pub-meta > span + span::before { content: ""; margin: 0; }
   .pub-meta > span { display: block; }
 }
+
+/* ── Short-form video ─────────────────────────────────────── */
+
+.short-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) 1fr;
+  gap: 1.75rem;
+  align-items: start;
+  margin: 2rem 0 2.75rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.short-feature:last-of-type { border-bottom: none; }
+
+/* 9:16 source; height is derived so the element reserves space before load */
+.short-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius);
+  background: var(--hero-bg);
+  display: block;
+}
+
+.short-feature-body h2,
+.short-feature-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+.short-feature-meta {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 0.9rem;
+}
+.short-feature-tagline {
+  color: var(--brand-amber);
+  font-weight: 600;
+}
+
+@media (max-width: 620px) {
+  .short-feature { grid-template-columns: 1fr; gap: 1.1rem; }
+  .short-video { max-width: 300px; margin: 0 auto; }
+}
