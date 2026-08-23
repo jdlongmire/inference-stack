@@ -1130,3 +1130,62 @@ li {
   border-radius: var(--radius);
   display: block;
 }
+
+/* ── Publications ─────────────────────────────────────────── */
+
+.pub-blurb {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+}
+.pub-count {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+}
+.pub-item {
+  padding: 0.85rem 0 0.85rem 0.9rem;
+  border-left: 3px solid var(--border-color);
+  margin-bottom: 0.35rem;
+  transition: border-color var(--transition), background var(--transition);
+}
+.pub-item:hover {
+  border-left-color: var(--brand-amber);
+  background: var(--hover-tint);
+}
+.pub-title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+.pub-meta {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.pub-meta > span + span::before {
+  content: "·";
+  margin: 0 0.5rem;
+  color: var(--text-tertiary);
+}
+.pub-doi {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.76rem;
+  color: var(--text-tertiary);
+}
+.pub-doi:hover { color: var(--link-hover); }
+
+@media (max-width: 600px) {
+  .pub-meta > span + span::before { content: ""; margin: 0; }
+  .pub-meta > span { display: block; }
+}
