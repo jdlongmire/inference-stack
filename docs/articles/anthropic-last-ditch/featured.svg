@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4488ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0044cc;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid suggesting structure/constraints -->
+  <g opacity="0.1">
+    <line x1="0" y1="157.5" x2="1200" y2="157.5" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="472.5" x2="1200" y2="472.5" stroke="#ffffff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Central dividing line (the standoff) -->
+  <line x1="600" y1="100" x2="600" y2="530" stroke="#666" stroke-width="3" stroke-dasharray="10,5"/>
+
+  <!-- Left side: Anthropic (red theme - red lines) -->
+  <g>
+    <!-- Red line emphasis -->
+    <line x1="200" y1="250" x2="550" y2="250" stroke="url(#redGlow)" stroke-width="4" filter="url(#glow)"/>
+    <line x1="200" y1="315" x2="550" y2="315" stroke="url(#redGlow)" stroke-width="4" filter="url(#glow)"/>
+    <line x1="200" y1="380" x2="550" y2="380" stroke="url(#redGlow)" stroke-width="4" filter="url(#glow)"/>
+
+    <!-- Shield symbol (safeguards) -->
+    <path d="M 375 150 L 400 140 L 425 150 L 425 180 Q 425 210 400 220 Q 375 210 375 180 Z"
+          fill="none" stroke="#ff4444" stroke-width="2.5" filter="url(#glow)"/>
+    <line x1="390" y1="175" x2="410" y2="175" stroke="#ff4444" stroke-width="2"/>
+    <line x1="390" y1="185" x2="410" y2="185" stroke="#ff4444" stroke-width="2"/>
+    <line x1="390" y1="195" x2="410" y2="195" stroke="#ff4444" stroke-width="2"/>
+
+    <!-- Label -->
+    <text x="375" y="450" font-family="Arial, sans-serif" font-size="18" fill="#ff6666" text-anchor="middle" font-weight="bold">
+      ENFORCEABLE
+    </text>
+    <text x="375" y="475" font-family="Arial, sans-serif" font-size="18" fill="#ff6666" text-anchor="middle" font-weight="bold">
+      CONSTRAINTS
+    </text>
+  </g>
+
+  <!-- Right side: Pentagon/OpenAI (blue theme - trust demands) -->
+  <g>
+    <!-- Dotted lines (weaker enforcement) -->
+    <line x1="650" y1="250" x2="1000" y2="250" stroke="url(#blueGlow)" stroke-width="4" stroke-dasharray="15,10" filter="url(#glow)"/>
+    <line x1="650" y1="315" x2="1000" y2="315" stroke="url(#blueGlow)" stroke-width="4" stroke-dasharray="15,10" filter="url(#glow)"/>
+    <line x1="650" y1="380" x2="1000" y2="380" stroke="url(#blueGlow)" stroke-width="4" stroke-dasharray="15,10" filter="url(#glow)"/>
+
+    <!-- Handshake symbol (trust) -->
+    <g transform="translate(825, 140)">
+      <path d="M -20 20 L -20 5 L -10 0 L 0 5 L 0 10"
+            fill="none" stroke="#4488ff" stroke-width="2.5" filter="url(#glow)"/>
+      <path d="M 20 20 L 20 5 L 10 0 L 0 5 L 0 10"
+            fill="none" stroke="#4488ff" stroke-width="2.5" filter="url(#glow)"/>
+      <ellipse cx="0" cy="10" rx="8" ry="6" fill="none" stroke="#4488ff" stroke-width="2"/>
+    </g>
+
+    <!-- Label -->
+    <text x="825" y="450" font-family="Arial, sans-serif" font-size="18" fill="#6699ff" text-anchor="middle" font-weight="bold">
+      TRUST US
+    </text>
+    <text x="825" y="475" font-family="Arial, sans-serif" font-size="18" fill="#6699ff" text-anchor="middle" font-weight="bold">
+      (DISCRETION)
+    </text>
+  </g>
+
+  <!-- Negotiation arrows pointing at center -->
+  <g opacity="0.6">
+    <path d="M 550 315 L 585 315" fill="none" stroke="#ff6666" stroke-width="2" marker-end="url(#arrowRed)"/>
+    <path d="M 650 315 L 615 315" fill="none" stroke="#6699ff" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  </g>
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff6666" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6699ff" />
+    </marker>
+  </defs>
+
+  <!-- Pressure indicators (angled lines from top suggesting external force) -->
+  <g opacity="0.3">
+    <line x1="100" y1="0" x2="300" y2="200" stroke="#ff4444" stroke-width="1.5"/>
+    <line x1="200" y1="0" x2="350" y2="200" stroke="#ff4444" stroke-width="1.5"/>
+    <line x1="900" y1="0" x2="750" y2="200" stroke="#4488ff" stroke-width="1.5"/>
+    <line x1="1000" y1="0" x2="850" y2="200" stroke="#4488ff" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bottom barrier (categorical limits) -->
+  <rect x="100" y="520" width="1000" height="8" fill="#888" opacity="0.6"/>
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="16" fill="#aaa" text-anchor="middle" font-style="italic">
+    CATEGORICAL LIMITS (derivative systems cannot originate judgment)
+  </text>
+
+  <!-- Title at top -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">
+    Last-Ditch Negotiations
+  </text>
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="20" fill="#cccccc" text-anchor="middle">
+    Trust Demands vs. Enforceable Constraints
+  </text>
+</svg>

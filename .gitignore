@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+
+# Jekyll
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/Gemfile.lock
+docs/vendor/

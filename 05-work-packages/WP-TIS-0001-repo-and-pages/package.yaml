@@ -1,0 +1,38 @@
+id: WP-TIS-0001
+title: Stand up The Inference Stack repo and Pages site
+status: in-progress
+scope: >
+  Stand up jdlongmire/inference-stack from longmire-repo-template, migrate the
+  AI-Research publication into docs/ under the new brand, define and publish the
+  seven-layer framework, and serve the result at inference.thinxai.net.
+
+  NOT in scope: rebuilding or re-posting any existing video; migrating or deleting
+  anything in AI-Research or repointing aithinkr.net (it stays live as archive);
+  any LinkedIn post; purchasing a new domain.
+authority_boundary: >
+  Authorized by JD 2026-08-23 ("New repo and GitHub Pages - inference-stack,
+  supersedes and subsumes all prior work"): create the repo, scaffold it, migrate
+  and rebrand the site content, enable GitHub Pages, and commit and push to main.
+
+  NOT authorized without a fresh explicit go: the inference.thinxai.net DNS record
+  (JD's live domain); the CI workflow under .github/ (harness hard-stop, needs a
+  Chief-Architect override); any external post announcing the site; any change to
+  AI-Research or aithinkr.net; publishing the seven layer NAMES as settled - they
+  are thinx-Claude's draft pending JD's sign-off.
+actions:
+  - Create repo from longmire-repo-template (done)
+  - Migrate AI-Research docs/ wholesale, rebrand config, includes, palette (done)
+  - Install brand assets; derive marks, favicons, OG banner (done)
+  - Draft the seven layers and publish /stack/ (done, names pending JD sign-off)
+  - Add /shorts/ index for the video line (done)
+  - Rewrite cross-links to the new domain and repo; repoint Giscus (done)
+  - Enable GitHub Pages on main /docs with CNAME inference.thinxai.net
+  - Add the CNAME DNS record, DNS-only, at Cloudflare (JD or authorized)
+  - Add CI build gate and branch protection (blocked on override)
+verification: >
+  A machine check, not an assertion: the Pages build reports success; curl of
+  https://inference.thinxai.net/ returns 200 with a valid certificate; the site
+  search index resolves; no reference to ITIO or AI Operations Center survives
+  anywhere in the tree (grep -ri); every internal link in the built _site resolves
+  to a real file (the CI link check, once landed).
+disposition: open
