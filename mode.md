@@ -51,6 +51,11 @@ Canonical treatment: [docs/stack/index.md](docs/stack/index.md). The layer colou
 defined once, in `docs/assets/css/style.css` as `--layer-*`; anything rendering the stack
 reads them from there.
 
+**Anything that names or depicts the layers must agree with `/stack/`.** Two of the post
+banners currently do not and are held back for that reason — see
+[docs/assets/brand/banners/README.md](docs/assets/brand/banners/README.md). Check a new
+graphic against the seven names before it ships.
+
 ## Routing (read on demand)
 
 identity → [04-construct/mission.md](04-construct/mission.md) ·
